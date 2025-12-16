@@ -3,28 +3,28 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Balles Rebondissantes</title>
+		<title>Balles rebondissante</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<!-- Entete titre + description + boutons -->
+    <!-- En-tete: titre + description + boutons -->
 		<header>
 			<div class="title">
-				<h1>Js Objet : Balle Rebondissante</h1>
-				<p class="hint">Touche : P pause ● + ajouter ● - retirer ● clic ajoute un objet ● 1 balle ● 2 etoile ● 3 coeur ● 0 aleatoire
+				<h1>Js Objet: Balles rebondissantes</h1>
+				<p class="hint">Touches : P pause • + ajouter • - retirer • clic ajoute un objet • 1 balle • 2 étoile • 3 coeur • 0 aléatoire
 				</p>
 			</div>
-			<div class="palette" id="palette">
-				<button data-shape="ball" class="active" >Balle (1)</button>
-				<button data-shape="star" >Balle (2)</button>
-				<button data-shape="heart">Balle (3)</button>
-				<button data-shape="random">Balle (0)</button>
-			</div>
+            <div class="palette" id="palette">
+                <button data-shape="ball" class="active">Balle (1)</button>
+                <button data-shape="star" >Etoile (2)</button>
+                <button data-shape="heart">Coeur (3)</button>
+                <button data-shape="auto">Aléatoire (0)</button>
+            </div>
 		</header>
-		<!-- canvas :  Zone de rendu pour les objet -->
-		<canvas></canvas>
+    <!-- Canvas: Zone de rendu pour les objets -->
+        <canvas></canvas>
 
-    
-        <script type="module" src="src/main.js"></script>
+        <!-- Chargement du module principal -->
+        <script type="module" src="./src/main.js"></script>
 	</body>
 </html>
