@@ -1,0 +1,91 @@
+html , body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0b0b0f;
+    color: #f5f7ff;
+}
+
+header {
+    position : absolute;
+    top : 0px;
+    left: 0px;
+    right: 0px;
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    pointer-events: none;
+}
+
+.title {
+    
+    pointer-events: none;
+}
+
+.title h1 {
+    font-size: 1.15rem;
+    margin: 0;
+    letter-spacing: -0.5px;
+}
+
+.title .hint {
+    margin-top: 4px;
+    font-size: 0.9rem;
+    opacity: 0.85;
+}
+
+.palette {
+    display: flex;
+    gap: 8px;
+    pointer-events: auto;
+}
+
+.palette button {
+    background-color: #1c1f2b;
+    color: #f5f7ff;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.palette button:hover {
+    border-color: rgba(255, 255, 255, 0.35);
+}
+
+.palette button.active {
+    background-color: #0b0b0f;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.35);
+}
+
+.palette button.active[data-shape="ball"]{
+    background-color: #4da3ff;
+    border-color: #4da3ff;
+
+}
+.palette button.active[data-shape ="star"]{
+    background-color: #ffcf4d;
+    border-color: #ffcf4d;
+
+}
+.palette button.active[data-shape ="heart"]{
+    background-color: #ff6b8f;
+    border-color: #ff6b8f;
+
+
+}
+
+.palette button.active[data-shape="auto"] {
+    background-color: #8e8eff;
+    border-color: #8e8eff;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
